@@ -5,10 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet" />
   <!-- Hojas de estilos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -17,34 +13,58 @@
 </head>
 
 <body>
-  <header class="text-center p-3 my-4"><h1 class="fs-2 fw-bold">Our Menu</h1></header>
-  <div class="container-fluid d-lg-flex d-md-flex flex-md-wrap justify-content-center">
+  <header id="top">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2 me-auto user-select-none border-bottom">Food LLC</a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#togglerNav"
+          aria-controls="togglerNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="togglerNav">
+          <ul class="navbar-nav d-flex justify-content-between me-md-5 text-uppercase fw-bold d-lg-none d-md-none">
+            <li class="nav-item border-bottom">
+              <a class="nav-link active" aria-current="page" href="#chicken">Chicken</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="#beef">Beef</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="#sushi">Sushi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<h1 class="display-5 pt-5 pb-3 fw-bold text-center text-primary-emphasis">Our Menu</h1>
+  <div class="col-11 container-fluid d-lg-flex d-md-flex flex-md-wrap justify-content-center">
 
-    <div class="border border-dark border-1 bg-dark-subtle col-lg-3 col-md-5 mx-md-1 mx-lg-2 my-lg-2 p-3 my-md-3 my-sm-3">
-      Div hijo
-      <p>
+    <div class="flex-fill border border-dark border-1 text-dark bg-primary-subtle col-lg-3 col-md-5  mx-lg-2 my-lg-2 py-3 px-4 my-md-1 my-sm-3 my-3">
+      <div class="text-black fw-bold text-center pb-2 fs-5" id="chicken">Chicken</div>
+      <p class="text-dark">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sint
         illum, reiciendis alias, unde amet ipsum iusto eveniet sed ea
         consectetur. A, impedit reiciendis ipsam recusandae ab blanditiis
-        adipisci sapiente!
+        adipisci sapiente! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repudiandae commodi porro optio, quibusdam quas, vero veritatis maxime illo cupiditate similique quisquam voluptatibus, obcaecati rem fugit accusantium. Natus, corrupti provident.
       </p>
     </div>
-    <div class="border border-dark border-1 bg-dark-subtle col-lg-3 col-md-5 mx-md-1 mx-lg-2 my-lg-2 p-3 my-md-3 my-sm-3">
-      Div hijo
-      <p>
+    <div class="flex-fill border border-dark border-1 text-dark bg-primary-subtle col-lg-3 col-md-5 ms-md-2 mx-lg-2 my-lg-2 py-3 px-4 my-md-1 my-sm-3 my-3">
+      <Div class="text-black fw-bold text-center pb-2 fs-5" id="beef">Beef</Div>
+      <p class="text-dark">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, odit
         fugiat? Quod, quidem consectetur? Veniam officia, numquam, reiciendis
         provident velit natus ut cumque iste, nisi quae distinctio explicabo
-        debitis molestias!
+        debitis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, natus debitis in eaque exercitationem optio eveniet quae laborum nemo non vitae illum blanditiis facere temporibus odio error magnam corrupti cupiditate!
       </p>
     </div>
-    <div class="border border-dark border-1 text-dark bg-dark-subtle col-lg-3 col-md-10 mx-md-auto mx-lg-2 my-lg-2 p-3 my-md-3 my-sm-3">
-      Div hijo
+    <div class="flex-fill border border-dark border-1 text-dark bg-primary-subtle col-lg-3 col-md-10 mx-md-auto mx-lg-2 my-lg-2 py-3 px-4 my-md-2 my-sm-3 my-3">
+      <div class="text-black fw-bold text-center pb-2 fs-5" id="sushi">Sushi</div>
       <p class="text-dark">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum
         optio aut voluptates officiis adipisci sunt quaerat libero in facere
         temporibus saepe autem, eaque iure excepturi mollitia iusto amet
-        magni.
+        magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium quis minima accusamus quod eveniet consequuntur itaque optio asperiores voluptate velit facilis rerum sequi, excepturi omnis, modi repudiandae a tenetur?
       </p>
     </div>
   </div>
